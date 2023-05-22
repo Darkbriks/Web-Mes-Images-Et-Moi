@@ -3,8 +3,10 @@ Ceci est une correction du code du site web Mes Images et Moi de Pierre Maciejew
 /!\ Tous les commentaires d'origine ont été supprimés pour ne laisser que ceux de la correction afin de ne pas nuire à la lisibilité du code /!\
 
 ## 1. index.html
+- Documentation des modifications non rédigée.
 
 ## 2. style.css
+- Documentation des modifications non rédigée.
 
 ## 3. script.js
 ### 3.1. Remarques générales
