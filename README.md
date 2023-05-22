@@ -1,6 +1,6 @@
 Ceci est une correction du code du site web Mes Images et Moi de Pierre Maciejewski par Antoine Patron.
 
-/!\ Tous les commentaires d'origine ont été supprimés pour ne laisser que ceux de la correction afin de ne pas nuire à la lisibilité du code /!\
+/!\ Tous les commentaires d'origine ont été supprimés ou le seront pour ne laisser que ceux de la correction afin de ne pas nuire à la lisibilité du code /!\
 
 ## 1. index.html
 - Documentation des modifications non rédigée.
