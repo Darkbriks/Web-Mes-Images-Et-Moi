@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mes images et moi</title>
+    <meta name="description" content="Site comportant un assemble d'image. En passant de Disney, Pixar, Star Wars, Marvel, Les Muppets, Animal Crossing">
+    <meta name="auteur" content="Pierre Maciejewski">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script> <!-- Il est preferable de mettre les scripts à la fin du body pour que la page se charge plus rapidement, mais je l'ai mis ici pour que le code soit plus lisible. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <section id="hero">
+        <nav>
+            <a href="index.html"> Accueil</a> <!-- Meme si c'est la page sur laquelle on est, il est preferable de mettre un lien vers cette page pour la clarté de la navigation et la cohérence du site. -->
+            <a href="Disney/Disney.html"> Disney</a>
+            <a href="Pixar/Pixar.html"> Pixar</a>
+            <a href="Marvel/Marvel.html"> Marvel</a>
+            <a href="Star Wars/Star Wars.html"> Star Wars</a>
+            <a href="20th Century Fox/20th Century Fox.html"> 20th Century Fox</a>
+            <a href="Les Muppets/Les Muppets.html"> Les Muppets</a>
+            <a href="Nintendo/Nintendo.html"> Nintendo</a>
+            <a href="Netflix/Netflix.html"> Netflix</a>
+        </nav>
+
+
+        <div id="bandeau">
+            <div id="titre-bandeau">
+                <h1>Mes images
+                <br>&emsp;&emsp;&nbsp;&nbsp;&nbsp;et moi</h1>
+            </div>
+        </div>
+    </section>
+
+
+<section id="image-logo"> <!-- L'emplacement avec les carreaux d'image qui changent quand la souris est au-dessus une des images. -->
+    <div class="contenu-image-logo">
+
+        <div class="Logo">
+            <a href="Disney/Disney.html">
+                <img id="image1" src="Disney/Icone%20Disney.jpg" alt="Le personage Stargirl du film Stargirld et le logo Disney" title="Stargirl/Logo Disney" onmouseover="changeImage('image1', 'Disney/Logo.png')" onmouseout="changeImage('image1', 'Disney/Icone Disney.jpg')">
+            </a>
+        </div>
+
+        <div class="Logo">
+            <a href="Pixar/Pixar.html">
+                <img id="image2" src="Pixar/Icone%20Pixar.jpg" alt="Les deux personnages du film Elémentaire, un personnage sous forme humaine mais une avec une apparence de feu et un autre sous forme d'eau, ainsi que le logo Pixar." title="Elémentaire/Logo Pixar" onmouseover="changeImage('image2', 'Pixar/Logo.jpg')" onmouseout="changeImage('image2', 'Pixar/Icone%20Pixar.jpg')">
+            </a>
+        </div>
+
+        <div class="Logo">
+            <a href="Marvel/Marvel.html">
+                <img id="image3" src="Marvel/Icone%20Marvel.jpg" alt="Les deux facettes de Jennifer Walters (sa forme humaine et sa forme de Miss Hulk), ainsi le logo de Marvel" title="She-Hulk/Logo Marvel" onmouseover="changeImage('image3', 'Marvel/Logo.jpg')" onmouseout="changeImage('image3', 'Marvel/Icone%20Marvel.jpg')">
+            </a>
+        </div>
+
+        <div class="Logo">
+            <a href="Star Wars/Star%20Wars.html">
+                <img id="image4" src="Star Wars/Icone%20Star%20Wars.jpg" alt="Dark Vador en vacances version Lego, et le logo Star Wars" title="Dark Vador/Logo Star Wars" onmouseover="changeImage('image4', 'Star Wars/Logo.jpg')" onmouseout="changeImage('image4', 'Star Wars/Icone%20Star%20Wars.jpg')">
+            </a>
+        </div>
+
+
+        <div class="Logo">
+            <a href="20th Century Fox/20th%20Century%20Fox.html">
+                <img id="image5" src="20th Century Fox/Icone 20th Century Fox.jpg" alt="Neteyam et Jake Sully en train d'apprendre pêcher/Logo 20th Century Fox" onmouseover="changeImage('image5', '20th Century Fox/Logo.jpg')" onmouseout="changeImage('image5', '20th Century Fox/Icone 20th Century Fox.jpg')">
+            </a>
+        </div>
+
+        <div class="Logo">
+            <a href="Les Muppets/Les%20Muppets.html">
+                <img id="image6" src="Les Muppets/Icone%20Les%20Muppets.jpg" alt="Miss Piggy couchee sur un divant et le logo des Muppets" title="Miss Piggy/Les Muppets" onmouseover="changeImage('image6', 'Les Muppets/Logo.jpg')" onmouseout="changeImage('image6', 'Les Muppets/Icone Les Muppets.jpg')">
+            </a>
+        </div>
+
+        <div class="Logo">
+            <a href="Nintendo/Nintendo.html">
+                <img id="image7" src="Nintendo/Icone%20Nintendo.jpg" alt="Charlie le chat voyageur du jeu animal Crossing et le logo Nintendo" title="Charlie Animal Crossing/Logo Nintendo" onmouseover="changeImage('image7', 'Nintendo/Logo.jpg')" onmouseout="changeImage('image7', 'Nintendo/Icone Nintendo.jpg')">
+            </a>
+        </div>
+
+        <div class="Logo">
+            <a href="Netflix/Netflix.html">
+                <img id="image8" src="Netflix/Icone%20Netflix.jpg" alt="Wilhelm sur l'épaule de Simon et le logo de Netlfix" title="Young Royals/Logo Netflix" onmouseover="src='Netflix/Logo.jpg'" onmouseout="src='Netflix/Icone Netflix.jpg'"> <!-- Il est egalemment possible de faire le changement d'image sans passer par une fonction javascript -->
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<footer> <!-- Pied de page où sont indiquées les sources des images et vidéo mais aussi les polices d'écritures -->
+    <div id="Source">
+        <h1>Source des images et vidéos:</h1>
+
+<br>
+<div class="Liste">
+        <div class="Liste">
+            <ul>
+                <li>Disney</li>
+                <li>Pixar</li>
+                <li>Marvel</li>
+                <li>Star Wars</li>
+        </ul>
+        </div>
+
+        <div class="Liste">
+            <ul>
+                <li>Century Fox</li>
+                <li>Les Muppets</li>
+                <li>Nintendo</li>
+                <li>Netflix</li>
+            </ul>
+        </div>
+</div>
+        <br>
+        <p>L'icône provient du site</p>
+        <a href="https://www.flaticon.com/"> flaticon </a>
+        <p>Police Antoine de SIGN Studio</p>
+        <p>Police Molin de Aqeela Studio</p>
+        <p>Mes images et moi</p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

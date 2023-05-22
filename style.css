@@ -1,0 +1,169 @@
+*{margin:0; padding:0; font-weight: normal;}
+/* Quand il n'y a pas beaucoup de propriétés et que la compréhension est facile, on peut mettre plusieurs propriétés sur la même ligne. */
+
+/********** Section Police **********/
+@font-face
+{
+    font-family:'Molin';
+    src: url('police/Molin-8MmOz.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family:'Antoine';
+    src: url('police/AntoineLight-z8rGL.woff2') format('woff2');
+    font-weight: auto;
+    font-style: auto;
+}
+
+/********** Section Navigation **********/
+nav
+{
+    background-color: rgba(44, 43, 31, 0.51);
+    font-size: 1.5em; /* Il vaut mieux mettre une taille de police en em pour que le site soit responsive. */
+    text-align:center;
+    padding: 1%;
+}
+
+nav a
+{
+    padding: 2%;/* Le pourcentage permet de s'adapter à la taille de l'écran, contrairement au pixel. */
+    color: white;
+    font-family: Antoine, serif;
+}
+
+/********** Section Bandeau **********/
+#titre-bandeau
+{
+    text-align: center;
+    font-size: 4em; /* Meme chose qu'au dessus. */
+    margin-left:23%;
+    margin-right:23%;
+    background: darkseagreen;
+    font-family: Molin, serif;
+    font-weight: bold;
+}
+
+#bandeau
+{
+    background: rgba(37, 45, 36, 0.12);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/********** Section Contenu **********/
+/* Pour eviter de répéter les mêmes propriétés pour les images et les logos dans les media queries. */
+.Logo img {width: 100%;}
+.contenu-image-logo {display: grid; background: rgba(37, 45, 36, 0.12);}
+#image-logo {display: flex; justify-content: center;}
+
+/* Les media queries permettent de rendre le site responsive. Ils permettent de changer les propriétés css en fonction de la taille de l'écran. */
+/* Very little screen (mobile) */
+@media screen and (max-width: 480px)
+{
+    /* 1 colonne pour les images et les logos au lieu de 4*/
+    .contenu-image-logo {grid-template-columns: repeat(1, 150px);}
+    .Logo {height: 140px; margin: 3px;}
+    #image-logo {margin-top: 3px; height: 1200px;}
+}
+
+/* Little screen (tablet) */
+@media screen and (max-width: 768px) and (min-width: 481px)
+{
+    /* 2 colonnes pour les images et les logos au lieu de 4, et une taille plus petite pour les images */
+    .contenu-image-logo {grid-template-columns: repeat(2, 150px);}
+    .Logo {height: 140px; margin: 3px;}
+    #image-logo {margin-top: 3px; height: 600px;}
+}
+
+/* Medium screen (little laptop) */
+@media screen and (min-width: 769px) and (max-width: 1279px)
+{
+    /* 2 colonnes pour les images et les logos au lieu de 4 */
+    .contenu-image-logo {grid-template-columns: repeat(2, 190px);}
+    .Logo {height: 180px; margin: 4px;}
+    #image-logo {margin-top: 4px; height: 760px;}
+}
+
+/* Large screen (laptop and little desktop) */
+@media screen and (min-width: 1280px) and (max-width: 1919px)
+{
+    /* Disposition classique avec une legere reduction de la taille des images */
+    .contenu-image-logo {grid-template-columns: repeat(4, 190px);}
+    .Logo {height: 180px; margin: 4px;}
+    #image-logo {margin-top: 4px; height: 380px;}
+}
+
+/* Extra large screen (desktop) */
+@media screen and (min-width: 1920px) and (max-width: 2499px)
+{
+    /* Disposition classique */
+    .contenu-image-logo {grid-template-columns: repeat(4, 220px);}
+    .Logo {height: 200px; margin: 5px;}
+    #image-logo {margin-top: 5px; height: 440px;}
+}
+
+/* Very large screen (21/9 screen, 2k or more screen...) */
+@media screen and (min-width: 2500px)
+{
+    /* Disposition classique mais avec des images plus grandes pour les grands écrans */
+    .contenu-image-logo {grid-template-columns: repeat(4, 420px);}
+    .Logo {height: 400px; margin: 10px;}
+    #image-logo {margin-top: 10px;}
+}
+
+
+
+/********** Section Pied de page **********/
+/* Comme le footer est petit et fonctionne très bien avec les resolution a partir de 260px, il n'y a pas besoin de le rendre responsive. */
+#Source
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+    background-color: #93938d;
+}
+
+.Liste
+{
+    display: flex;
+    margin-left: 10px;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+}
+
+footer h1
+{
+    color: white;
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top: 20px;
+    font-family: Noto Sans, sans-serif;
+}
+
+footer ul
+{
+    list-style-position: inside;
+    font-family: Noto Sans, sans-serif;
+}
+
+
+footer a
+{
+    display: flex;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+    font-size: 13px;
+}
+
+footer p
+{
+    display: flex;
+    margin-top: 10px;
+    font-size: 13px;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+}
