@@ -34,6 +34,8 @@ nav a
     font-family: Antoine, serif;
 }
 
+#Home {float: left; background-color: bisque; height: 30px;} /* J'ai laissé la hauteur en pixel car elle me semble cohérente, quel que soit l'écran. */
+
 /********** Section Bandeau **********/
 #titre-bandeau
 {
