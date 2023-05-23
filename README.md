@@ -1,5 +1,3 @@
-Ceci est une correction du code du site web Mes Images et Moi de Pierre Maciejewski par Antoine Patron.
-
 Cette correction a pour but de corriger les erreurs (? je n'en ai pas trouvé), et d'améliorer le code (en le rendant plus lisible, plus court, plus performant, moins redondant, etc.) sans changer le rendu visuel du site (ou le moins possible).
 L'objectif est de te permettre de t'améliorer, si tu souhaites en faire ton métier.
 
